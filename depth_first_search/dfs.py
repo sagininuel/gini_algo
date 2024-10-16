@@ -22,7 +22,7 @@ def dfs(graph, start, visited=None):
     for next in graph[start] - visited:
         dfs(graph, next, visited)
 
-    return visited
+    # return visited
 
 
 if __name__=="__main__":
