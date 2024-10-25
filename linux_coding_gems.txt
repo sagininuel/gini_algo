@@ -1,0 +1,96 @@
+Linux Coding Gems
+
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+# 2024/06/19
+
+i) Create ctags
+	-> ctags -nR
+
+ii) ssh login convenient
+	-> ssh -l [remantek/root] 192.168.1.55
+
+iii) Remove ^M in vim
+	-> :e ++ff=dos
+	-> :set ff=unix
+
+iv) tar archive
+	-> :tar c some_dir | gzip > some_dir.tar.gz
+				xz > some_dir.tar.xz
+				bzip > some_dir.tar.bz
+
+v) 7z compress with password
+	-> 7z a remantek.7z * -pCUBESAT
+
+
+vi) Stack memory
+
+char a[] = "string"; // the compiler puts {'s','t','r','i','n','g', 0} onto STACK 
+
+char *a = "string"; // the compiler puts just the pointer onto STACK 
+                    // and {'s','t','r','i','n','g',0} in static memory area.
+
+
+
+
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+# 2024/06/24
+
+i) usb operations
+	-> sudo fdisk -l
+	-> lsusb	
+	-> df -hT
+	
+
+ii) Partitioning
+	-> sudo parted -s /dev/sdb mkpart primary fat32 1M 100%
+	-> sudo parted -s /dev/sdb mklabel msdos mkpart primary fat32 1M 100M mkpart primary ext4 100M 100%
+
+	Formating the partitions
+		-> sudo mkfs.vfat /dev/sdb1
+		-> sudo mkfs.ext4 /dev/sdb2
+
+	Labels for each partitions
+		-> sudo fatlabel /dev/sdb1 BOOT
+		-> sudo e2label /dev/sdb2 ROOT
+
+iii) Raspberry Pi user login
+	-> create file userconf.txt 
+	-> https://www.raspberrypi.com/news/raspberry-pi-bullseye-update-april-2022/
+
+	-> pi:$6$/4.VdYgDm7RJ0qM1$FwXCeQgDKkqrOU3RIRuDSKpauAbBvP11msq9X58c8Que2l1Dwq3vdJMgiZlQSbEXGaY5esVHGBNbCxKLVNqZW1
+	
+	-> echo 'mypassword' | openssl passwd -6 -stdin
+
+
+
+
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+# 2024.07.02
+
+i) Filesystems
+	-> lsblk 
+	-> lsblk -fs
+
+
+
+
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+# 2024.10.16
+
+i) Downloading and installing on Linux (Ubuntu/ Debian)
+
+1. Visit the official Visual Studio Code website and Download  -> code-x.x.x.tar.gz file
+2. Extract: tax -xvf code-x.x.x.tar.gz
+3. Move the extracted folder to a location of your choice (e.g. /usr/share/ OR /opt): sudo mv VSCode-linux-x64 /usr/share/code
+4. Create a symbolic link for easy access: sudo ln -s /usr/share/code/bin/code /usr/bin/code
+
+
+
+
+
+
+
