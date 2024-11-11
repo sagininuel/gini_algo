@@ -1,0 +1,172 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ANN_DSPA1	comm_def.h	106;"	d
+ANN_DSPA2	comm_def.h	107;"	d
+ANN_DSPA3	comm_def.h	108;"	d
+ANN_FIRE_END	comm_def.h	110;"	d
+ANN_FIRE_ING	comm_def.h	109;"	d
+ANN_FIRE_START	comm_def.h	104;"	d
+ANN_NOR	comm_def.h	103;"	d
+ANN_SHUTTER	comm_def.h	105;"	d
+ANN_WARNING	comm_def.h	111;"	d
+APPL	Makefile	/^APPL = $(HOME)\/ICT_control$/;"	m
+BAUD_RATE	comm_def.h	19;"	d
+CC	Makefile	/^CC       = gcc$/;"	m
+CDFLAGS	Makefile	/^CDFLAGS  = $(CFLAGS) $(DFLAGS) $(INCLUDE)$/;"	m
+CFLAGS	Makefile	/^CFLAGS   = $/;"	m
+CO2_1ST_LEVEL	comm_def.h	87;"	d
+CO2_2ND_LEVEL	comm_def.h	88;"	d
+CO2_3RD_LEVEL	comm_def.h	89;"	d
+CO2_ANN_LEVEL	comm_def.h	86;"	d
+CO2_NOR_LEVEL	comm_def.h	85;"	d
+CO_1ST_LEVEL	comm_def.h	81;"	d
+CO_2ND_LEVEL	comm_def.h	82;"	d
+CO_3RD_LEVEL	comm_def.h	83;"	d
+CO_ANN_LEVEL	comm_def.h	80;"	d
+CO_NOR_LEVEL	comm_def.h	79;"	d
+DEVICE_PATH	comm_def.h	20;"	d
+DFLAGS	Makefile	/^DFLAGS   = -D_DEBUG_ $/;"	m
+FIRE_1ST_LEVEL	comm_def.h	96;"	d
+FIRE_2ND_LEVEL	comm_def.h	97;"	d
+FIRE_3RD_LEVEL	comm_def.h	98;"	d
+FIRE_ACTIVE	comm_def.h	91;"	d
+FIRE_ANN_LEVEL	comm_def.h	95;"	d
+FIRE_END_LEVEL	comm_def.h	99;"	d
+FIRE_NOR_LEVEL	comm_def.h	94;"	d
+FIRE_RCV_ALARM	comm_def.h	100;"	d
+FIRE_RECEIVE	comm_def.h	92;"	d
+HIGH	comm_def.h	24;"	d
+HUMI_MAX	comm_def.h	71;"	d
+HUMI_MIN	comm_def.h	70;"	d
+ID_CO	comm_def.h	29;"	d
+ID_CO2	comm_def.h	30;"	d
+ID_NONE	comm_def.h	27;"	d
+ID_TEMP	comm_def.h	28;"	d
+ID_VOC	comm_def.h	31;"	d
+INCLUDE	Makefile	/^INCLUDE  = -I.\/ -I.\/include -I..\/include -I\/usr\/include -I\/usr\/local\/include -I\/usr\/include\/libxml2$/;"	m
+IP_TO_STRING	comm_def.h	6;"	d
+LDFLAGS	Makefile	/^LDFLAGS  = -L\/usr\/local\/lib -L\/lib -L\/usr\/lib$/;"	m
+LIBS	Makefile	/^LIBS     = -lm -lpthread -lpigpiod_if2 -lwiringPi -lcurl -lxml2$/;"	m
+LOG_PATH	comm_def.h	21;"	d
+LOW	comm_def.h	25;"	d
+MAX_IPC_BUFFER	comm_def.h	23;"	d
+MY_IP_ADDR	dspa_main.c	/^char MY_IP_ADDR[16];$/;"	v
+MemoryStruct	dspa_curl.c	/^struct MemoryStruct {$/;"	s	file:
+NUM_IN_GPIO_FIRE_ALARM	comm_def.h	40;"	d
+NUM_IN_GPIO_FIRE_ALARM	comm_def.h	58;"	d
+NUM_IN_GPIO_HEAT_SENSOR	comm_def.h	41;"	d
+NUM_IN_GPIO_HEAT_SENSOR	comm_def.h	59;"	d
+NUM_IN_GPIO_MANUAL_SWITCH	comm_def.h	42;"	d
+NUM_IN_GPIO_MANUAL_SWITCH	comm_def.h	60;"	d
+NUM_OUT_GPIO_DSPA1	comm_def.h	35;"	d
+NUM_OUT_GPIO_DSPA1	comm_def.h	51;"	d
+NUM_OUT_GPIO_DSPA2	comm_def.h	36;"	d
+NUM_OUT_GPIO_DSPA2	comm_def.h	52;"	d
+NUM_OUT_GPIO_DSPA3	comm_def.h	37;"	d
+NUM_OUT_GPIO_DSPA3	comm_def.h	54;"	d
+NUM_OUT_GPIO_FIRE_CONTROL	comm_def.h	38;"	d
+NUM_OUT_GPIO_FIRE_CONTROL	comm_def.h	56;"	d
+NUM_OUT_GPIO_SHUTTER	comm_def.h	34;"	d
+NUM_OUT_GPIO_SHUTTER	comm_def.h	53;"	d
+NUM_TIME_INTERVAL_10S	comm_def.h	65;"	d
+NUM_TIME_INTERVAL_15S	comm_def.h	66;"	d
+NUM_TIME_INTERVAL_30S	comm_def.h	67;"	d
+NUM_TIME_INTERVAL_5S	comm_def.h	64;"	d
+NUM_TIME_INTERVAL_60S	comm_def.h	68;"	d
+OBJECT	Makefile	/^OBJECT   = dspa_main.o \\$/;"	m
+PACKED	comm_def.h	4;"	d
+SOURCE	Makefile	/^SOURCE   = $(OBJECT:.o=.c)$/;"	m
+TARGET	Makefile	/^TARGET   = dspa$/;"	m
+TEMP_1ST_LEVEL	comm_def.h	75;"	d
+TEMP_2ND_LEVEL	comm_def.h	76;"	d
+TEMP_3RD_LEVEL	comm_def.h	77;"	d
+TEMP_ANN_LEVEL	comm_def.h	74;"	d
+TEMP_NOR_LEVEL	comm_def.h	73;"	d
+WriteMemoryCallback	dspa_curl.c	/^size_t WriteMemoryCallback(void *contents, size_t size, size_t nmemb, struct MemoryStruct *userp) $/;"	f
+_COMM_DEFINE_H_	comm_def.h	2;"	d
+all_ref_frame1	dspa_function.c	/^uint8_t all_ref_frame1[]   = {0x01, 0x03, 0x00, 0x02, 0x00, 0x06};$/;"	v
+all_ref_frame2	dspa_function.c	/^uint8_t all_ref_frame2[]   = {0x02, 0x03, 0x00, 0x02, 0x00, 0x06};$/;"	v
+all_ref_frame3	dspa_function.c	/^uint8_t all_ref_frame3[]   = {0x03, 0x03, 0x00, 0x02, 0x00, 0x06};$/;"	v
+all_ref_frame4	dspa_function.c	/^uint8_t all_ref_frame4[]   = {0x04, 0x03, 0x00, 0x02, 0x00, 0x06};$/;"	v
+co2	comm_def.h	/^    int co2;$/;"	m	struct:__anon1
+co2_ref_frame1	dspa_function.c	/^uint8_t co2_ref_frame1[]   = {0x01, 0x03, 0x00, 0x02, 0x00, 0x01};$/;"	v
+co2_ref_frame2	dspa_function.c	/^uint8_t co2_ref_frame2[]   = {0x02, 0x03, 0x00, 0x02, 0x00, 0x01};$/;"	v
+co2_ref_frame3	dspa_function.c	/^uint8_t co2_ref_frame3[]   = {0x03, 0x03, 0x00, 0x02, 0x00, 0x01};$/;"	v
+co2_ref_frame4	dspa_function.c	/^uint8_t co2_ref_frame4[]   = {0x04, 0x03, 0x00, 0x02, 0x00, 0x01};$/;"	v
+co2_sensor_t	comm_def.h	/^} co2_sensor_t;$/;"	t	typeref:struct:__anon1
+co_ref_frame1	dspa_function.c	/^uint8_t co_ref_frame1[]    = {0x05, 0x03, 0x10, 0x00, 0x00, 0x01};$/;"	v
+co_ref_frame2	dspa_function.c	/^uint8_t co_ref_frame2[]    = {0x06, 0x03, 0x10, 0x00, 0x00, 0x01};$/;"	v
+co_ref_frame3	dspa_function.c	/^uint8_t co_ref_frame3[]    = {0x07, 0x03, 0x10, 0x00, 0x00, 0x01};$/;"	v
+co_ref_frame4	dspa_function.c	/^uint8_t co_ref_frame4[]    = {0x08, 0x03, 0x10, 0x00, 0x00, 0x01};$/;"	v
+crc16	dspa_function.c	/^unsigned short crc16(const unsigned char *data, size_t length) $/;"	f
+file1	comm_def.h	/^    char *file1;$/;"	m	struct:__anon2
+file2	comm_def.h	/^    char *file2;$/;"	m	struct:__anon2
+file3	comm_def.h	/^    char *file3;$/;"	m	struct:__anon2
+file4	comm_def.h	/^    char *file4;$/;"	m	struct:__anon2
+file5	comm_def.h	/^    char *file5;$/;"	m	struct:__anon2
+file6	comm_def.h	/^    char *file6;$/;"	m	struct:__anon2
+file7	comm_def.h	/^    char *file7;$/;"	m	struct:__anon2
+file8	comm_def.h	/^    char *file8;$/;"	m	struct:__anon2
+file9	comm_def.h	/^    char *file9;$/;"	m	struct:__anon2
+fire_1st_active	dspa_status.c	/^int fire_1st_active  = FIRE_NOR_LEVEL;$/;"	v
+fire_2nd_active	dspa_status.c	/^int fire_2nd_active  = FIRE_NOR_LEVEL;$/;"	v
+fire_flag	dspa_status.c	/^int fire_flag  = false;$/;"	v
+first_CO	dspa_status.c	/^int first_CO   = 0, second_CO   = 0;$/;"	v
+first_CO2	dspa_status.c	/^int first_CO2  = 0, second_CO2  = 0;$/;"	v
+first_TEMP	dspa_status.c	/^int first_TEMP = 0, second_TEMP = 0;$/;"	v
+first_VOC	dspa_status.c	/^int first_VOC  = 0, second_VOC  = 0;$/;"	v
+getAll_algorithm	dspa_function.c	/^int getAll_algorithm(co2_sensor_t *sensor_d)$/;"	f
+getCo2_algorithm	dspa_function.c	/^int getCo2_algorithm(co2_sensor_t *sensor_d)$/;"	f
+getCo_algorithm	dspa_function.c	/^int getCo_algorithm()$/;"	f
+getTemperature_algorithm	dspa_function.c	/^int getTemperature_algorithm()$/;"	f
+get_rs485_data	dspa_function.c	/^int get_rs485_data(uint8_t *chk_buff) $/;"	f
+get_rs485_data_all	dspa_function.c	/^int get_rs485_data_all(uint8_t *chk_buff, co2_sensor_t *sensor_d) $/;"	f
+log_write	dspa_status.c	/^void log_write(const char* fmt, ...)$/;"	f
+loop_cnt	dspa_status.c	/^uint32_t loop_cnt    = 0;$/;"	v
+main	dspa_main.c	/^int main(int argc, char *argv[])$/;"	f
+memory	dspa_curl.c	/^    char *memory;$/;"	m	struct:MemoryStruct	file:
+path	comm_def.h	/^    char *path;$/;"	m	struct:__anon2
+pd_check_VOC_and_CO2_fire	dspa_status.c	/^int pd_check_VOC_and_CO2_fire(int curr_VOC, int curr_CO2)$/;"	f
+pd_check_VOC_and_CO_fire	dspa_status.c	/^int pd_check_VOC_and_CO_fire(int curr_VOC, int curr_CO)$/;"	f
+pd_check_VOC_and_TEMP_fire	dspa_status.c	/^int pd_check_VOC_and_TEMP_fire(int curr_VOC, int curr_TEMP)$/;"	f
+pd_check_fire	dspa_status.c	/^int pd_check_fire()$/;"	f
+pd_check_my_ip_address	dspa_curl.c	/^int pd_check_my_ip_address()$/;"	f
+pd_curl_send_alarm	dspa_curl.c	/^void pd_curl_send_alarm(int alarm_code)$/;"	f
+pd_dspa_thread_start	dspa_main.c	/^void pd_dspa_thread_start()$/;"	f
+pd_get_curl_data	dspa_curl.c	/^void pd_get_curl_data(int alarm_code, char *curl_data)$/;"	f
+pd_get_gpio_input	dspa_function.c	/^int pd_get_gpio_input(int gpio_no)$/;"	f
+pd_pigpio_open	dspa_function.c	/^int pd_pigpio_open()$/;"	f
+pd_send_sensor_data	dspa_curl.c	/^void pd_send_sensor_data(int co, int co2, int temp, int voc)$/;"	f
+pd_serial_open	dspa_function.c	/^int pd_serial_open() $/;"	f
+pd_set_gpio_alt	dspa_function.c	/^void pd_set_gpio_alt()$/;"	f
+pd_set_gpio_input	dspa_function.c	/^int pd_set_gpio_input(int gpio_no)$/;"	f
+pd_set_gpio_output	dspa_function.c	/^int pd_set_gpio_output(int gpio_no)$/;"	f
+ps_status_start	dspa_status.c	/^void *ps_status_start(void *data)$/;"	f
+reference_voc	dspa_function.c	/^int reference_voc  = 0;$/;"	v
+save_fire_manual	dspa_status.c	/^int save_fire_manual = FIRE_NOR_LEVEL;$/;"	v
+save_manual	dspa_status.c	/^int save_manual      = FIRE_NOR_LEVEL;$/;"	v
+second_CO	dspa_status.c	/^int first_CO   = 0, second_CO   = 0;$/;"	v
+second_CO2	dspa_status.c	/^int first_CO2  = 0, second_CO2  = 0;$/;"	v
+second_TEMP	dspa_status.c	/^int first_TEMP = 0, second_TEMP = 0;$/;"	v
+second_VOC	dspa_status.c	/^int first_VOC  = 0, second_VOC  = 0;$/;"	v
+server_ip	comm_def.h	/^    char *server_ip;$/;"	m	struct:__anon2
+server_port	comm_def.h	/^    char *server_port;$/;"	m	struct:__anon2
+size	dspa_curl.c	/^    size_t size;$/;"	m	struct:MemoryStruct	file:
+speaker_ip	comm_def.h	/^    char *speaker_ip;$/;"	m	struct:__anon2
+speaker_port	comm_def.h	/^    char *speaker_port;$/;"	m	struct:__anon2
+system_initial	dspa_function.c	/^int system_initial = 0;$/;"	v
+temp	comm_def.h	/^    int temp;$/;"	m	struct:__anon1
+temp_ref_frame1	dspa_function.c	/^uint8_t temp_ref_frame1[]  = {0xe4, 0x03, 0x00, 0x0b, 0x00, 0x01};$/;"	v
+uint16_t	comm_def.h	/^typedef unsigned short uint16_t;$/;"	t
+uint32_t	comm_def.h	/^typedef unsigned int   uint32_t;$/;"	t
+uint8_t	comm_def.h	/^typedef unsigned char  uint8_t;$/;"	t
+voc	comm_def.h	/^    int voc;$/;"	m	struct:__anon1
+voc_ref_frame1	dspa_function.c	/^uint8_t voc_ref_frame1[]   = {0x01, 0x03, 0x00, 0x06, 0x00, 0x01};$/;"	v
+voc_ref_frame2	dspa_function.c	/^uint8_t voc_ref_frame2[]   = {0x02, 0x03, 0x00, 0x06, 0x00, 0x01};$/;"	v
+voc_ref_frame3	dspa_function.c	/^uint8_t voc_ref_frame3[]   = {0x03, 0x03, 0x00, 0x06, 0x00, 0x01};$/;"	v
+voc_ref_frame4	dspa_function.c	/^uint8_t voc_ref_frame4[]   = {0x04, 0x03, 0x00, 0x06, 0x00, 0x01};$/;"	v
+xml_data_t	comm_def.h	/^} xml_data_t;$/;"	t	typeref:struct:__anon2
