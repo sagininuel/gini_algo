@@ -5,7 +5,6 @@
 #include <arpa/inet.h>
 #include <stdarg.h>
 #include <time.h>
-#include <curl/curl.h>
 #include <ifaddrs.h>
 #include <netinet/in.h>
 
@@ -40,7 +39,10 @@ int pd_check_my_ip_address()
 
     for (ifa = ifaddr; ifa != NULL; ifa = ifa->ifa_next) 
     {
-        if (ifa->ifa_name && strcmp(ifa->ifa_name, "eth0") == 0) 
+	   printf("Interface name: %s\t%d\n",ifa->ifa_name,strcmp(ifa->ifa_name, "eth0"));
+        if (ifa->ifa_name && (strcmp(ifa->ifa_name, "enp1s0") == 0 ? 0 : 1 && strcmp(ifa->ifa_name, "eth0") == 0 ? 0 : 1)== 0) 
+	//if (ifa->ifa_addr == NULL)
+		//continue;
         {
             if (ifa->ifa_addr->sa_family == AF_INET) 
             {
