@@ -1,0 +1,36 @@
+#!/bin/bash
+
+# 1. Preprocessing
+if [ ! -e .Build/preprocessed ]; then 
+	mkdir -p Build/preprocessed  
+fi
+gcc -E src/main.c -o Build/preprocessed/main.i
+gcc -E src/math.c -o Build/preprocessed/math.i
+
+
+#2. Compilation 
+if [ ! -e ./Build/compiled ]; then 
+	mkdir Build/compiled 
+fi
+gcc -S Build/preprocessed/main.i -o Build/compiled/main.s
+#gcc -S main.c -o compiled/main.s
+gcc -S Build/preprocessed/math.i -o Build/compiled/math.s
+#gcc -S math.c -o compiled/math.s
+
+
+#3. Assembly
+#file = $assembled
+if [ ! -e ./Build/assembled ]; then
+	mkdir Build/assembled 
+fi
+gcc -c Build/compiled/main.s -o Build/assembled/main.o
+gcc -c Build/compiled/math.s -o Build/assembled/math.o
+#rm -rf assembled
+
+
+objdump -d Build/assembled/main.o
+
+#4. Linking
+gcc Build/assembled/main.o Build/assembled/math.o -o Build/main
+
+chmod +x Build/main
