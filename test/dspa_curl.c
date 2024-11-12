@@ -5,7 +5,6 @@
 #include <arpa/inet.h>
 #include <stdarg.h>
 #include <time.h>
-#include <curl/curl.h>
 #include <ifaddrs.h>
 #include <netinet/in.h>
 
