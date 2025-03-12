@@ -1,36 +1,38 @@
 #!/bin/bash
 
+#@ cat readme.txt
+
 # 1. Preprocessing
-if [ ! -e .Build/preprocessed ]; then 
-	mkdir -p Build/preprocessed  
+if [ ! -e .build/preprocessed ]; then 
+	mkdir -p build/preprocessed  
 fi
-gcc -E src/main.c -o Build/preprocessed/main.i
-gcc -E src/math.c -o Build/preprocessed/math.i
+gcc -E src/main.c -o build/preprocessed/main.i
+gcc -E src/math.c -o build/preprocessed/math.i
 
 
 #2. Compilation 
-if [ ! -e ./Build/compiled ]; then 
-	mkdir Build/compiled 
+if [ ! -e ./build/compiled ]; then 
+	mkdir build/compiled 
 fi
-gcc -S Build/preprocessed/main.i -o Build/compiled/main.s
+gcc -S build/preprocessed/main.i -o build/compiled/main.s
 #gcc -S main.c -o compiled/main.s
-gcc -S Build/preprocessed/math.i -o Build/compiled/math.s
+gcc -S build/preprocessed/math.i -o build/compiled/math.s
 #gcc -S math.c -o compiled/math.s
 
 
 #3. Assembly
 #file = $assembled
-if [ ! -e ./Build/assembled ]; then
-	mkdir Build/assembled 
+if [ ! -e ./build/assembled ]; then
+	mkdir build/assembled 
 fi
-gcc -c Build/compiled/main.s -o Build/assembled/main.o
-gcc -c Build/compiled/math.s -o Build/assembled/math.o
+gcc -c build/compiled/main.s -o build/assembled/main.o
+gcc -c build/compiled/math.s -o build/assembled/math.o
 #rm -rf assembled
 
 
-objdump -d Build/assembled/main.o
+objdump -d build/assembled/main.o
 
 #4. Linking
-gcc Build/assembled/main.o Build/assembled/math.o -o Build/main
+gcc build/assembled/main.o build/assembled/math.o -o build/main
 
-chmod +x Build/main
+chmod +x build/main

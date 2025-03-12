@@ -22,7 +22,7 @@ add:
 	.cfi_endproc
 .LFE0:
 	.size	add, .-add
-	.ident	"GCC: (Ubuntu 13.2.0-23ubuntu4) 13.2.0"
+	.ident	"GCC: (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0"
 	.section	.note.GNU-stack,"",@progbits
 	.section	.note.gnu.property,"a"
 	.align 8

@@ -816,11 +816,18 @@ extern int __overflow (FILE *, int);
 
 
 # 4 "src/math.h"
+int (*sum_t) (int, int);
 int add(int,int);
 # 3 "src/main.c" 2
 
 
+static int current_location_counter;
+static char * name = "Current location counter";
+
+
 int main(){
- int sum = add(2,3);
+ printf("Pointer to sum_t: %p\n", add);
+ sum_t = add;
+ int sum = sum_t(2,3);
  printf("Sum: %d\n", sum);
 }
