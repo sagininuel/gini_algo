@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Data>
+  <Item>
+    <Speaker>192.168.1.100</Speaker>
+    <SpeakerPort>80</SpeakerPort>
+    <Server>192.168.0.51</Server>
+    <ServerPort>4006</ServerPort>
+    <Path>alarm</Path>
+    <RackId>rack</RackId>
+    <Shutter>rollshutter</Shutter>
+    <Dspa1>dspa1</Dspa1>
+    <Dspa2>dspa2</Dspa2>
+    <Dspa3>dspa3</Dspa3>
+    <FireIng>fireout</FireIng>
+    <FireEnd>rackend</FireEnd>
+    <Warning>warning</Warning>
+  </Item>
+</Data>
+

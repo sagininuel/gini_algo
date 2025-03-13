@@ -1,0 +1,4 @@
+# Run
+
+./build_stages
+

@@ -1,0 +1,38 @@
+#!/bin/bash
+
+#@ cat readme.txt
+
+# 1. Preprocessing
+if [ ! -e .build/preprocessed ]; then 
+	mkdir -p build/preprocessed  
+fi
+gcc -E src/main.c -o build/preprocessed/main.i
+gcc -E src/math.c -o build/preprocessed/math.i
+
+
+#2. Compilation 
+if [ ! -e ./build/compiled ]; then 
+	mkdir build/compiled 
+fi
+gcc -S build/preprocessed/main.i -o build/compiled/main.s
+#gcc -S main.c -o compiled/main.s
+gcc -S build/preprocessed/math.i -o build/compiled/math.s
+#gcc -S math.c -o compiled/math.s
+
+
+#3. Assembly
+#file = $assembled
+if [ ! -e ./build/assembled ]; then
+	mkdir build/assembled 
+fi
+gcc -c build/compiled/main.s -o build/assembled/main.o
+gcc -c build/compiled/math.s -o build/assembled/math.o
+#rm -rf assembled
+
+
+objdump -d build/assembled/main.o
+
+#4. Linking
+gcc build/assembled/main.o build/assembled/math.o -o build/main
+
+chmod +x build/main

@@ -1,0 +1,17 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+MY_IP_ADDR	dspa_main.c	/^char MY_IP_ADDR[16];$/;"	v
+MemoryStruct	dspa_curl.c	/^struct MemoryStruct {$/;"	s	file:
+WriteMemoryCallback	dspa_curl.c	/^size_t WriteMemoryCallback(void *contents, size_t size, size_t nmemb, struct MemoryStruct *userp) $/;"	f
+main	dspa_main.c	/^int main(int argc, char *argv[])$/;"	f
+memory	dspa_curl.c	/^    char *memory;$/;"	m	struct:MemoryStruct	file:
+pd_check_my_ip_address	dspa_curl.c	/^int pd_check_my_ip_address()$/;"	f
+pd_curl_send_alarm	dspa_curl.c	/^void pd_curl_send_alarm(int alarm_code)$/;"	f
+pd_dspa_thread_start	dspa_main.c	/^void pd_dspa_thread_start()$/;"	f
+pd_get_curl_data	dspa_curl.c	/^void pd_get_curl_data(int alarm_code, char *curl_data)$/;"	f
+pd_send_sensor_data	dspa_curl.c	/^void pd_send_sensor_data(int co, int co2, int temp, int voc)$/;"	f
+size	dspa_curl.c	/^    size_t size;$/;"	m	struct:MemoryStruct	file:
